@@ -11,19 +11,12 @@ int main() {
 
         switch (choice) {
             case 1:
-                printf("Enter task description: ");
-                fgets(taskDesc, sizeof(taskDesc), stdin);
-                taskDesc[strcspn(taskDesc, "\n")] = 0; // Remove newline character
-                addTask(taskDesc);
+                
                 break;
             case 2:
-                printf("Enter task number to mark as completed: ");
-                scanf("%d", &taskNumber);
-                markTaskCompleted(taskNumber - 1); // array index starts at 0
-                break;
+                
             case 3:
-                printTasks();
-                break;
+                
             case 4:
                 printf("Thank you for choosing Us!.");
                 exit(0);
