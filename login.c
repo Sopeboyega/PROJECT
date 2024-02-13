@@ -66,7 +66,6 @@ int validateAdminID(const char id[]) {
             return 0;
         }
     }
-
     return 1;
 }
 
@@ -138,6 +137,5 @@ int main() {
             printf("Invalid Admin ID. Please enter a valid Admin ID.\n");
         }
     }
-
     return 0; // Exit the program successfully
 }

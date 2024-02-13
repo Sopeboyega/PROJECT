@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 
 #define MAX_COLUMNS 10   // Maximum number of columns in the CSV file
 #define MAX_LENGTH 100   // Maximum length of each field in the CSV file
@@ -23,8 +24,6 @@ typedef struct {
 CartItem cart[MAX_PRODUCTS]; // Array to store cart items
 int cart_size = 0; // Current number of items in the cart
 Product products[MAX_PRODUCTS]; // Array to store products in the cart
-
-
 
 // Function prototypes
 void add_to_cart(const char *name, int quantity);
@@ -81,7 +80,6 @@ int main() {
                 printf("Invalid choice. Please try again.\n");
         }
     } while (1);
-
     return 0;
 }
 
@@ -174,7 +172,6 @@ void add_to_cart(const char *name, int quantity) {
     printf("Product with name '%s' does not exist in inventory.\n", name);
 }
 
-
 // Function to display items available
 void display_items(const char *file_name) {
     printf("Items available:\n");
@@ -205,7 +202,6 @@ void view_cart() {
     }
     printf("Total Price: $%.2f\n", total_price);
 }
-
 
 // Function to checkout and finalize the order
 void checkout() {

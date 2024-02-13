@@ -1,0 +1,10 @@
+Name:  nigga
+Email: nigga@gmail.com
+Gender: male
+Phone Number: 08033068290
+Password: nigga
+Name:  nigga
+Email: nigga@user.com
+Gender: female
+Phone Number: 08033068290
+Password: niggatron
